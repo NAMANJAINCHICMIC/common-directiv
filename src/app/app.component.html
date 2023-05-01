@@ -1,0 +1,19 @@
+<div>
+  <form [formGroup]="mainForm" (submit)="onSubmit()">
+    <div>
+<!-- <app-child-comp [placeholder]="'mobile'" [formName]="mainForm.get('mobile')" [appOnlyNumber] ></app-child-comp> -->
+<app-child-comp [placeholder]="'mobile'" [formName]="mainForm.get('mobile')" appOnlyNumber ></app-child-comp>
+    </div>
+    <div>
+      <input type="text" formControlName="otp" placeholder="otp" appOnlyNumber>
+    </div>
+    <div>
+      <button type="submit">submit</button>
+    </div>
+    <!-- <div (click)="divButton()">
+      <p (click)="pButton()">
+hlo
+      </p>
+    </div> -->
+  </form>
+</div>
